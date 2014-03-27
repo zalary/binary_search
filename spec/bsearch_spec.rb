@@ -13,7 +13,7 @@ describe "ArrayUtil" do
       expect(ArrayUtil.bsearch([1], 1)).to eq(true)
     end
 
-    it "should return false for arrays with 1 element not equal to input" do
+   it "should return false for arrays with 1 element not equal to input" do
       expect(ArrayUtil.bsearch([2], 1)).to eq(false)
     end
 
@@ -22,6 +22,7 @@ describe "ArrayUtil" do
       expect(ArrayUtil.bsearch([-10, 3, 8, 19], 5)).to eq(false)
       expect(ArrayUtil.bsearch([2, 3, 5, 8, 10], 5)).to eq(true)
       expect(ArrayUtil.bsearch([-10, 0, 3, 8, 19], 5)).to eq(false)
+
     end
   end
 end
